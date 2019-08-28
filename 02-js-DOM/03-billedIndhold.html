@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .firkant {
+            height: 100px;
+            width: 100px;
+            background: green;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .cirkel {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background: red;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        /*
+        height: 100px;
+        width: 100pxline-height: 100px (vertical midt på)border-radius: 50%;
+        (rund kant)text-align: center;
+        (horisontalt midt på)
+*/
+    </style>
+</head>
+
+<body>
+
+    <div class="firkant"></div>
+    <div class="cirkel"></div>
+
+
+</body>
+
+<script>
+    document.querySelector(".firkant").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/frog.png" alt="frog">`;
+    document.querySelector(".cirkel").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/pig.png
+    " alt="pig
+    ">`;
+</script></html>

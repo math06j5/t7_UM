@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .firkant {
+            height: 200px;
+            width: 200px;
+            background: green;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .cirkel {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background: red;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /*
+        height: 100px;
+        width: 100pxline-height: 100px (vertical midt på)border-radius: 50%;
+        (rund kant)text-align: center;
+        (horisontalt midt på)
+*/
+    </style>
+</head>
+
+<body>
+
+    <div class="firkant"></div>
+    <div class="cirkel"></div>
+
+
+</body>
+
+<script>
+    let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`
+    let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`
+    //    let foxURL = `http://mabe-kea.dk/E19/pics/fox.png`
+    const foxURL = document.createElement("img");
+    foxURL.src = "http://mabe-kea.dk/E19/pics/fox.png";
+    foxURL.alt = "ræv";
+
+    document.querySelector(".firkant").innerHTML = `<img src=${firkantURL} alt ="frø">`;
+    document.querySelector(".cirkel").innerHTML = `<img src=${cirkelURL} alt ="frø">`;;
+    //    document.querySelector(".cirkel").innerHTML += `<img src=${foxURL } alt ="rød ræv">`;
+
+    document.querySelector(".cirkel").appendChild(img);
+</script></html>

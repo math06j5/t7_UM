@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            /*            width: 100px;*/
+            height: 100px;
+            background: orange;
+            display: inline-block;
+            border: 1px solid black;
+            transition: .5s;
+        }
+
+        .marker {
+            background: blue;
+            border-radius: 0;
+        }
+
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 1em;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <script>
+        //        const domElm = document.querySelector("div");
+        //        domElm.addEventListener("click", marker);
+        //
+        //        function marker() {
+        //            this.classList.toggle("marker");
+        //        }
+        const diver = document.querySelectorAll("div");
+
+        diver.forEach(div => {
+            div.addEventListener("click", marker);
+        })
+
+        function marker() {
+            this.classList.toggle("marker");
+        }
+    </script>
+</body></html>

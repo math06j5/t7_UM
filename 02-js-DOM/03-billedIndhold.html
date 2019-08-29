@@ -40,8 +40,25 @@
 </body>
 
 <script>
-    document.querySelector(".firkant").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/frog.png" alt="frog">`;
-    document.querySelector(".cirkel").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/pig.png
-    " alt="pig
-    ">`;
+    const firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
+    const cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+
+    //    document.querySelector(".firkant").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/frog.png" alt="frog">`;
+    //    document.querySelector(".cirkel").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/pig.png
+    //    " alt="pig
+    //    ">`;
+
+    //GRØN FRØ//
+    const firkant = document.querySelector(".firkant");
+    const imgF = document.createElement("img");
+    imgF.src = firkantURL;
+    imgF.alt = "grønd frø";
+    firkant.appendChild(imgF);
+
+    //LYSERØD GRIS//
+    const cirkel = document.querySelector(".cirkel");
+    const imgC = document.createElement("img");
+    imgC.src = cirkelURL;
+    imgC.alt = "lyserød gris";
+    cirkel.appendChild(imgC);
 </script></html>

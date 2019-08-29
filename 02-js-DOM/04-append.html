@@ -40,16 +40,46 @@
 </body>
 
 <script>
-    let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`
-    let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`
-    //    let foxURL = `http://mabe-kea.dk/E19/pics/fox.png`
-    const foxURL = document.createElement("img");
-    foxURL.src = "http://mabe-kea.dk/E19/pics/fox.png";
-    foxURL.alt = "ræv";
+    //    let firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`
+    //    let cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`
+    //    //    let foxURL = `http://mabe-kea.dk/E19/pics/fox.png`
+    //    const foxURL = document.createElement("img");
+    //    foxURL.src = "http://mabe-kea.dk/E19/pics/fox.png";
+    //    foxURL.alt = "ræv";
+    //
+    //    document.querySelector(".firkant").innerHTML = `<img src=${firkantURL} alt ="frø">`;
+    //    document.querySelector(".cirkel").innerHTML = `<img src=${cirkelURL} alt ="frø">`;;
+    //    //    document.querySelector(".cirkel").innerHTML += `<img src=${foxURL } alt ="rød ræv">`;
+    //
+    //    document.querySelector(".cirkel").appendChild(img);
 
-    document.querySelector(".firkant").innerHTML = `<img src=${firkantURL} alt ="frø">`;
-    document.querySelector(".cirkel").innerHTML = `<img src=${cirkelURL} alt ="frø">`;;
-    //    document.querySelector(".cirkel").innerHTML += `<img src=${foxURL } alt ="rød ræv">`;
+    const firkantURL = `http://mabe-kea.dk/E19/pics/frog.png`;
+    const cirkelURL = `http://mabe-kea.dk/E19/pics/pig.png`;
+    const foxlURL = `http://mabe-kea.dk/E19/pics/fox.png`;
 
-    document.querySelector(".cirkel").appendChild(img);
+    //    document.querySelector(".firkant").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/frog.png" alt="frog">`;
+    //    document.querySelector(".cirkel").innerHTML = `<img src="http://mabe-kea.dk/E19/pics/pig.png
+    //    " alt="pig
+    //    ">`;
+
+    //GRØN FRØ//
+    const firkant = document.querySelector(".firkant");
+    const imgF = document.createElement("img");
+    imgF.src = firkantURL;
+    imgF.alt = "grønd frø";
+    firkant.appendChild(imgF);
+
+    //LYSERØD GRIS//
+    const cirkel = document.querySelector(".cirkel");
+    const imgC = document.createElement("img");
+    imgC.src = cirkelURL;
+    imgC.alt = "lyserød gris";
+    cirkel.appendChild(imgC);
+
+    //LYSERØD GRIS//
+    const cirkel = document.querySelector(".cirkel");
+    const imgC = document.createElement("img");
+    imgC.src = cirkelURL;
+    imgC.alt = "lyserød gris";
+    cirkel.appendChild(imgC);
 </script></html>

@@ -20,6 +20,7 @@
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             grid-gap: 1em;
         }
+
     </style>
 
 </head>
@@ -74,7 +75,7 @@
                 h2.textContent = person.gsx$navn.$t;
 
                 const img = klon.querySelector("img");
-                img.src = person.gsx$billede.$t;;
+                img.src = person.gsx$billede.$t;
                 img.alt = "billede af " + person.navn;
 
                 const a = klon.querySelector("a");
@@ -86,6 +87,9 @@
 
 
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>
